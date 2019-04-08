@@ -1,4 +1,7 @@
 <h1>Sign up!</h1>
+
+<!-- Errors should go here! -->
+
 <%= form_for(@user) do |f| %>
   <ul>
     <li>
@@ -27,13 +30,13 @@
     </li>
 
     <li>
-      <%= f.label      :password %>
-      <%= f.text_field :password %>
+      <%= f.label          :password %>
+      <%= f.password_field :password %>
     </li>
 
     <li>
-      <%= f.label      :password_confirmation %>
-      <%= f.text_field :password_confirmation %>
+      <%= f.label          :password_confirmation %>
+      <%= f.password_field :password_confirmation %>
     </li>
 
     <li>
