@@ -1,0 +1,8 @@
+<h1>Hello!</h1>
+
+<% if @user.present? %>
+  Thanks for registering <%= @user.full_name %>!
+<% else %>
+  Huh! Seems like there are no registered users yet!
+  <%= link_to "Create one here", new_user_path %>
+<% end %>

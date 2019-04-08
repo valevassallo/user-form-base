@@ -26,8 +26,12 @@ keep in mind:
 
 # Your Mission
 
-The form should have following fields and restrictions, note that all
-fields are required unless stated otherwise:
+Go to http://localhost:3000/users/new
+
+The form should have following fields, but no restrictions or
+validations. Use Rails validations to ensure a user doesn't register
+with invalid data. Note that all fields are required unless stated
+otherwise:
 
 | Field                 | Restriction                                            |
 |-----------------------|--------------------------------------------------------|
@@ -40,4 +44,7 @@ fields are required unless stated otherwise:
 | Password Confirmation | Must the same as the password.                         |
 | Password Hint         | Optional. Must be 100 characters max.                  |
 
-If there is an error in a field, display it at the beginning of the form.
+If there is an error in a field, redirect the user back to the form
+and display the error at the beginning.
+
+If the user was created successfully, redirect the user to the index action.
