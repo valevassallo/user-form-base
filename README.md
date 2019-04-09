@@ -48,3 +48,14 @@ If there is an error in a field, redirect the user back to the form
 and display the error at the beginning.
 
 If the user was created successfully, redirect the user to the index action.
+
+Also, last names should be formatted following this logic:
+
+| Last Name      | Persisted Value |
+|----------------|-----------------|
+| PUENTE         | Puente          |
+| puente         | Puente          |
+| de la quintana | de la Quintana  |
+| De La Quintana | de la Quintana  |
+| DEL PILAR      | del Pilar       |
+| Ponce De Leon  | Ponce de Leon   |
